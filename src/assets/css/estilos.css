@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+}
+
+:root {
+    --first-color: #08d9d6;
+    --accent-color: #ff2e63;
+    --black-color: #252a34;
+    --background-color: #F2F2F2;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--background-color);
+}
+
+header {
+    display: flex;
+    padding: 20px 0;
+    background: #fff;
+}
+
+header .contenedor {
+    display: flex;
+}
+
+header figure {
+    width: 30%;
+}
+
+header ul {
+    width: 70%;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    width: 20%;
+    text-align: center;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+header ul li:hover {
+    background: var(--accent-color);
+}
+
+header ul li:hover > a {
+    color: #fff;
+} 
+
+header ul li a {
+    text-decoration: none;
+    color: #000;
+
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.separador {
+    padding: 40px 0;
+}
+
+.separador h2 {
+    color: var(--first-color);
+}
+
+section.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards a {
+    width: 31%;
+}
+
+.cards div > p {
+    color: #000000;
+}
+
+.card {
+    background: #fff;
+    margin-bottom: 60px;
+
+}
+
+.card-no-margin {
+    margin-bottom: 0;
+}
+
+.card > figure {
+    background: #08d9d6;
+    width: 100%;
+    height: 100px;
+}
+
+.card .info {
+    padding: 20px;
+}
+
+.card .title {
+    color: var(--first-color);
+}
+
+.card .desc {
+    font-size: 14px;
+}
+
+.card .details {
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+}
+
+.card .details .user {
+    width: 80%;
+    display: flex;
+    align-items: center;   
+}
+
+.card .details .user .avatar-contenedor {
+    margin-right: 10px;
+}
+
+.card .details .user .avatar-contenedor .avatar {
+    width: 35px;
+    height: 35px;
+    background: url(/src/assets/img/author.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 100%;
+    background-size: 150% 150%;    
+}
+
+.card .details .user p {
+    font-size: 10px;
+}
+
+.card .details .time {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer {
+    background: #fff;
+    padding: 20px 0px;
+}
+
+footer .contenedor {
+    display: flex;
+}
+
+footer ul {
+    display: flex;
+    width: 30%;
+}
+
+footer .up {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer #up {
+    width: 25px;
+    height: 25px;
+    background: #000;
+}
+
+footer ul li {
+    margin-right: 20px;
+}
+
+footer a {
+    color: #000;
+}

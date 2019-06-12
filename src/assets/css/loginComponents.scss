@@ -1,0 +1,21 @@
+@import "@material/snackbar/mdc-snackbar";
+@import "@material/button/mdc-button";
+@import "@material/icon-button/mdc-icon-button";
+
+// .retryButton {
+//     color: #fff;
+
+// }
+
+.retryButton:not(:disabled) {
+    color: #bb86fc 
+}
+
+.retryButton::before, .retryButton::after {
+    background-color: #bb86fc 
+}
+
+.buttonDismiss {
+    color: #fff;
+}
+

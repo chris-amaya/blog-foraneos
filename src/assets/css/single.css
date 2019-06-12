@@ -1,0 +1,50 @@
+.articulo{
+    background: #fff;
+    margin-bottom: 40px;
+}
+
+.backroundFoto {
+    height: 100%;
+    background: rgba(0,0,0,.4);
+}
+
+.foto {
+    background: url('https://i.prcdn.co/img?regionKey=JgWx9e%2B%2Bo0oNMTbCDOkT9w%3D%3D&scale=100');
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedorArticulo {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foto .contenedorArticulo {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 30px;
+}
+
+.foto .contenedorArticulo > * {
+    color: #fff;
+}
+
+.foto .tituloArticulo {
+    color: var(--first-color)
+}
+
+.foto .tituloArticulo,
+.foto #nombreAutor,
+.foto .fecha {
+    width: 100%;   
+}
+
+.infoArticulo {
+    padding: 20px 0;
+    color: #848484;
+}
+

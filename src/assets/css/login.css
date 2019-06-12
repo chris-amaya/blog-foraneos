@@ -1,0 +1,169 @@
+
+
+.contenedor .hero {
+    display: flex;
+}
+
+.login > * {
+    color: #fff
+}
+
+.hero {
+    width: 100%;
+    display: flex;
+}
+
+.heroBackground {
+    background: url(https://images.unsplash.com/photo-1520880867055-1e30d1cb001c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    width: 60%;
+    height: 100vh;
+    background-position: -300px center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    background: #252A34;
+    width: 40%;
+}
+
+.login .contenedor {
+    padding: 60px 10px;
+}
+
+.login .contenedor a {
+    color: #fff;
+}
+.login .contenedor > input {
+    border: none;
+    width: 100%;
+    background: transparent;
+    border-bottom: 2px solid #fff;
+    padding: 10px;
+    color: #fff;
+    outline: none; 
+}
+
+.login .contenedor > input::placeholder {
+    color: #fff;
+}
+
+.login .contenedor input[type="checkbox"] {
+    display:none;
+}
+
+.login .contenedor input[type="checkbox"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-1px 4px 0 0;
+    vertical-align:middle;
+    background:url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) left top no-repeat;
+    cursor:pointer;
+}
+
+/* .login .contenedor input[type="checkbox"]:checked + label span {
+    background:url(https://cdn.tutsplus.com/webdesign/uploads/legacy/tuts/391_checkboxes/check_radio_sheet.png) -19px top no-repeat;
+} */
+
+.buttonLogin {
+    background: var(--first-color);
+    color: #fff;
+    padding: 10px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.groupRecordar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;   
+}
+
+.loginButtonsOpcionales {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 10px 0px 0px 0px;
+    border-top: 2px solid #fff;
+}
+
+.loginButtonsOpcionales .facebookButton {
+    width: 40%;
+    background: #3b5998;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.loginButtonsOpcionales .googleButton {
+    width: 40%;
+    background: #fff;
+    padding: 10px 0px;
+}
+
+#mostrarErrores {
+    font-size: 12px;
+    background: #F44336;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    display: none;
+    animation-duration: 0.3s;
+    opacity: 0;
+}
+
+@keyframes top {
+    from { 
+        display: block;
+        position: relative;
+        top: -30px;
+        opacity: 0;
+    }
+    to { 
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+#mostrarErrores li {
+    list-style: disc;
+}
+
+/* CUSTOM GOOGLE BUTTON */
+
+#customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-family: serif;
+    font-weight: normal;
+  }
+  span.icon {
+    background: url('https://developers.google.com/identity/sign-in/g-normal.png') transparent 5px 50% no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+  }
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
