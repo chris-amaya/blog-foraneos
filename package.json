@@ -45,7 +45,7 @@
     "express-validator": "^5.3.1",
     "hbs": "^4.0.4",
     "material-components-web": "^2.3.0",
-    "mongoose": "^5.5.8",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.0",
     "socket.io-client": "^2.2.0"
   }
